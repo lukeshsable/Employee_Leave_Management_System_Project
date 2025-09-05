@@ -1,0 +1,122 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Page Content */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0077aa;
+}
+
+/* Employee Details Table */
+table.employee-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.employee-details th,
+.employee-details td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.employee-details th {
+    background-color: #0077aa;
+    color: #fff;
+    width: 200px;
+    font-weight: 600;
+}
+
+.employee-details td {
+    background-color: #f9f9f9;
+}
+
+/* Input fields inside table cells */
+.employee-details input[type="text"],
+.employee-details input[type="email"] {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* Action Buttons */
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.actions button:hover {
+    background-color: #0077aa;
+}
+
+/* Success and Error Messages */
+.success {
+    text-align: center;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.error {
+    text-align: center;
+    color: #d32f2f;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .employee-details th,
+    .employee-details td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .actions button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

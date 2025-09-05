@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professional Login</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login Portal</h2>
+    <form action='LoginServlet' method='post'>
+      <div class="input-group">
+        <label for="username">Username</label>
+       <input type="text" name="username" id="username" placeholder="Enter username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="role">Select Role</label>
+        <select name="role" id="role" required>
+          <option value="">-- Select Role --</option>
+          <option value="hr">HR</option>
+          <option value="manager">Manager</option>
+          <option value="employee">Employee</option>
+        </select>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* General page setup */
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Wrapper */
+.page-wrapper {
+  margin: 20px;
+}
+
+/* Headings */
+.page-wrapper h2,
+.page-wrapper h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Success & Error Messages */
+.message {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.message.success {
+  color: #4caf50;
+}
+.message.error {
+  color: #f44336;
+}
+
+/* Action Buttons (Back & Add) */
+.page-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.page-actions .btn-primary,
+.page-actions .btn-back {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.page-actions .btn-primary {
+  background-color: #00aaff;
+}
+.page-actions .btn-primary:hover {
+  background-color: #0077aa;
+}
+.page-actions .btn-back {
+  background-color: #dc3545;
+}
+.page-actions .btn-back:hover {
+  background-color: #c82333;
+}
+
+/* Keep forms inline */
+.inline-form {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Data Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.data-table th,
+.data-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.data-table th {
+  background-color: #0077aa;
+  color: #fff;
+  font-weight: normal;
+}
+.data-table tr:nth-child(even) td {
+  background-color: #f7f7f7;
+}
+
+/* Row-level action buttons */
+.actions-cell .btn-action,
+.actions-cell .btn-delete {
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+.actions-cell .btn-action {
+  background-color: #00aaff;
+}
+.actions-cell .btn-action:hover {
+  background-color: #0077aa;
+}
+.actions-cell .btn-delete {
+  background-color: #dc3545;
+}
+.actions-cell .btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .data-table th,
+  .data-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .page-actions .btn-primary,
+  .page-actions .btn-back {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
